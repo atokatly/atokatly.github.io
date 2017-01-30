@@ -1,3 +1,21 @@
+.contact-icon {
+  margin: auto;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
 #background {
   max-width: 100%;
+}
+
+#github {
+  max-width: 17%;
+  image-orientation: center;
+}
+
+#linkedin {
+  max-width: 5%;
+  padding-bottom: 15.5px;
 }

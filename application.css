@@ -1,3 +1,50 @@
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/timbers.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.demo-layout-transparent {
+  background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.demo-card-image.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: url('images/Anthony.jpeg') center / cover;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
 .contact-icon {
   margin: auto;
 }
@@ -11,11 +58,10 @@
 }
 
 #github {
-  max-width: 17%;
-  image-orientation: center;
+  max-width: 18%;
 }
 
 #linkedin {
   max-width: 5%;
-  padding-bottom: 15.5px;
+  /*padding-bottom: 15.5px;*/
 }

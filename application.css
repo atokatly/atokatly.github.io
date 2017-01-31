@@ -1,10 +1,11 @@
 .mdl-layout-title {
-  color: black;
+  /*color: black;*/
 }
 
 .demo-card-wide.mdl-card {
   width: 512px;
   display: inline-block;
+
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
@@ -46,10 +47,10 @@ footer {
   text-align: center;
 }
 
-img.center {
+/*img.center {
     display: block;
     margin: 0 auto;
-}
+}*/
 
 .contact-icon {
   margin: auto;
@@ -61,13 +62,23 @@ img.center {
 
 #background {
   max-width: 100%;
+  width: 100%;
 }
 
 #github {
-  max-width: 18%;
+  max-width: 100%;
+  width: 100%;
 }
 
 #linkedin {
-  max-width: 5%;
+  max-width: 100%;
+  width: 30%
   /*padding-bottom: 15.5px;*/
+}
+
+#about {
+  /*background-color: #ffecb3*/
+  /*background-color: #1b5e20;*/
+  margin: 0 auto;
+  width: 512px;
 }

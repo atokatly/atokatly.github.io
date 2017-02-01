@@ -12,6 +12,7 @@
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -57,17 +58,17 @@
                   <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
                     <img class="anthony" src=" images/Anthony.jpeg" width="150" height="150" border="0" alt="">
                       <p>
-                          I'm a software engineer looking for new opportunities. When I'm not coding you can find me watching or playing soccer. I'm originally from the Pacific Northwest, so I love the Portland Timbers. You can find my resume <a href="files/resume.pdf">here</a>!
+                          I'm a software engineer looking for new opportunities. When I'm not coding you can find me watching or playing soccer. I'm originally from the Pacific Northwest, so I love the Portland Timbers (That's what the picture above is for!).
                   </div>
 
 
 
 
-                  <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
+                  <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Skills</h3>
 
                   <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
                       <p>
-                          Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                        I'm proficient in Ruby on Rails, JavaScript, HTML, and CSS. I also have experience with Swift, Xcode, Sinatra, Node and Angular. You can find my resume <a href="files/resume.pdf">here</a>!
                       </p>
                   </div>
               </div>
@@ -121,35 +122,38 @@
                         <h2 class="mdl-card__title-text">Contact</h2>
                     </div>
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" images/contact-image.jpg" border="0" alt="">
+                        <img class="article-image" src=" images/new_header.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__supporting-text">
                         <p>
-                            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                            Want to connect with me? Send me a message below! You can also connect with me on <a href="https://www.linkedin.com/in/atokatly">LinkedIn</a>.
                         </p>
-                        <p>
-                            Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet.
-                        </p>
-                        <form action="mailto:atokatly884@gmail.com" method="post" enctype="text/plain" class="">
+                        <form action="contact-form-handler.php" method="post" enctype="text/plain" name="contactform">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" name="name" type="text" id="Name">
                                 <label class="mdl-textfield__label" for="Name">Name...</label>
                                 <span class="mdl-textfield__error">Letters and spaces only</span>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="Email">
+                                <input class="mdl-textfield__input" name="email" type="text" id="Email">
                                 <label class="mdl-textfield__label" for="Email">Email...</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+                                <textarea class="mdl-textfield__input" type="text" name="message" rows="5" id="note"></textarea>
                                 <label class="mdl-textfield__label" for="note">Enter note</label>
                             </div>
                             <p>
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Send">
-                                    Submit
-                                </button>
+                                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Submit">
+                                    <!-- Submit
+                                </button> -->
                             </p>
                         </form>
+                        <script language="JavaScript">
+                          var frmvalidator  = new Validator("contactform");
+                          frmvalidator.addValidation("name","req","Please provide your name");
+                          frmvalidator.addValidation("email","req","Please provide your email");
+                          frmvalidator.addValidation("email","email","Please enter a valid email address");
+                        </script>
                     </div>
                 </div>
             </div>

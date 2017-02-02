@@ -128,32 +128,26 @@
                         <p>
                             Want to connect with me? Send me a message below! You can also connect with me on <a href="https://www.linkedin.com/in/atokatly">LinkedIn</a>.
                         </p>
-                        <form action="contact-form-handler.php" method="post" enctype="text/plain" name="contactform">
+                        <form action="https://formspree.io/anthonyjtokatly@gmail.com" method="post">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" name="name" type="text" id="Name">
                                 <label class="mdl-textfield__label" for="Name">Name...</label>
                                 <span class="mdl-textfield__error">Letters and spaces only</span>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" name="email" type="text" id="Email">
+                                <input class="mdl-textfield__input" name="_replyto" type="text" id="Email">
                                 <label class="mdl-textfield__label" for="Email">Email...</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <textarea class="mdl-textfield__input" type="text" name="message" rows="5" id="note"></textarea>
+                                <textarea class="mdl-textfield__input" type="text" name="body" rows="5" id="note"></textarea>
                                 <label class="mdl-textfield__label" for="note">Enter note</label>
                             </div>
                             <p>
-                                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Submit">
+                                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Send Message">
                                     <!-- Submit
                                 </button> -->
                             </p>
                         </form>
-                        <script language="JavaScript">
-                          var frmvalidator  = new Validator("contactform");
-                          frmvalidator.addValidation("name","req","Please provide your name");
-                          frmvalidator.addValidation("email","req","Please provide your email");
-                          frmvalidator.addValidation("email","email","Please enter a valid email address");
-                        </script>
                     </div>
                 </div>
             </div>

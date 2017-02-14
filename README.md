@@ -1,3 +1,4 @@
 # atokatly.github.io
 
-In Progress Personal Site
+Personal site with contact information and resume links. Also has recent project samples from my portfolio. 
+
